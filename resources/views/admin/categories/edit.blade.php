@@ -26,7 +26,7 @@
                                             <label for="name" class="my-2">Name*</label>
                                             <input type="text" name="name" id="name"
                                                 placeholder="Name"
-                                                value="{{$category->name, old('name')}}"
+                                                value="{{old('name',$category->name)}}"
                                                 class="form-control @error('name') is-invalid @enderror"    
                                             >
                                             @error('name')
